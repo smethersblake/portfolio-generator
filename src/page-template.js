@@ -1,4 +1,4 @@
-module.exports = (name, github) =>
+module.exports = templateData =>
 {
     return `
     <!DOCTTYPE html>
@@ -10,8 +10,8 @@ module.exports = (name, github) =>
         <title>Portfolio Demo</title>
     </head>
     <body>
-        <h1>${name}</h1>
-        <h2><a href="https://github.com/${github}">Github</a></h2>
+        <h1>${templateData.name}</h1>
+        <h2><a href="https://github.com/${templateData.github}">Github</a></h2>
     </body>
     </html>
     `
